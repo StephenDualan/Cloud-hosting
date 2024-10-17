@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephen Dualan - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        input, textarea {
+            color: #ffffff; 
+            background-color: #2d3748; 
+        }
+        input::placeholder, textarea::placeholder {
+            color: #A0AEC0; 
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex flex-col">
+    <header class="bg-gray-800 p-10">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold">Stephen Dualan</h1>
+            <p class="text-lg font-medium text-gray-400 mt-2">Web Developer | Designer | Creator</p>
+            <nav class="mt-5">
+                <ul class="flex justify-center space-x-4">
+                    <li><a href="#about" class="hover:text-gray-400">About</a></li>
+                    <li><a href="#skills" class="hover:text-gray-400">Skills</a></li>
+                    <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <section id="about" class="container mx-auto p-10 text-center">
+        <h2 class="text-3xl font-bold mb-5">About Me</h2>
+        <img src="1.jpg" alt="Stephen Dualan" class="mb-5 rounded-full w-70 h-60 mx-auto">
+        <p class="mb-5">I am a 3rd year college IT student with a strong interest in programming and software development. I have 1 year of experience in Java development and enjoy working on projects that challenge my skills and allow me to learn new technologies.</p>
+    </section>
+
+    <section id="skills" class="bg-gray-800 p-10 text-center">
+        <h2 class="text-3xl font-bold mb-5">Skills</h2>
+        <div class="flex justify-center items-center space-x-10">
+            <div class="group p-4 bg-gray-700 rounded-lg hover:bg-blue-600 transition duration-300 w-32 text-center">
+                <h3 class="text-xl font-semibold group-hover:text-white transition duration-300">HTML</h3>
+            </div>
+            <div class="group p-4 bg-gray-700 rounded-lg hover:bg-green-600 transition duration-300 w-32 text-center">
+                <h3 class="text-xl font-semibold group-hover:text-white transition duration-300">CSS</h3>
+            </div>
+            <div class="group p-4 bg-gray-700 rounded-lg hover:bg-yellow-500 transition duration-300 w-32 text-center">
+                <h3 class="text-xl font-semibold group-hover:text-white transition duration-300">JavaScript</h3>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contact" class="container mx-auto p-10">
+        <h2 class="text-3xl font-bold mb-5">Contact Me</h2>
+        <form id="contact-form" class="flex flex-col">
+            <input type="text" placeholder="Your Name" class="mb-4 p-2 rounded" required>
+            <input type="email" placeholder="Your Email" class="mb-4 p-2 rounded" required>
+            <textarea placeholder="Your Message" class="mb-4 p-2 rounded" required></textarea>
+            <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Send Message</button>
+        </form>
+    </section>
+    
+    <footer class="bg-gray-800 p-5 text-center">
+        <div class="container mx-auto">
+            <div class="mt-2 flex justify-center space-x-4">
+                <a href="https://github.com/StephenDualan" target="_blank" class="text-gray-400 hover:text-white">GitHub</a>
+                <a href="https://www.facebook.com/stephen.dualan" target="_blank" class="text-gray-400 hover:text-white">Facebook</a>
+                <a href="https://www.instagram.com/stephendualan02/dc.edu.ph" class="text-gray-400 hover:text-white">Instagram</a>
+            </div>
+            <p class="mt-4">Contact: +639054285135</p>
+            <p class="mt-4">&copy; 2024 Stephen Dualan. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Thank you for your message!");
+            this.reset();
+        });
+    </script>
+</body>
+</html>

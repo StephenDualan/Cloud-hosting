@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* A cleaner font */
+}
+
+body {
+    line-height: 1.6;
+    color: #f0f0f0; /* Light text color for contrast */
+    background-image: url('3.jpg'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+.container {
+    width: 90%; /* Slightly wider container */
+    max-width: 1200px; /* Max width for larger screens */
+    margin: auto;
+    overflow: hidden;
+    padding: 30px; /* More padding for spacious feel */
+    background: rgba(34, 34, 34, 0.9); /* Dark background for readability */
+    border-radius: 15px; /* Increased rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* More pronounced shadow */
+}
+
+header {
+    background: linear-gradient(135deg, #2C3E50, #4CA1AF); /* Dark gradient background */
+    color: #ecf0f1; /* Light text color */
+    padding: 40px 0; /* Increased padding */
+    text-align: center;
+    border-radius: 15px 15px 0 0; /* Rounded top corners */
+}
+
+header h1 {
+    font-size: 3em; /* Larger font size */
+    margin-bottom: 10px; /* Spacing below the title */
+}
+
+.profile-pic {
+    width: 180px; /* Larger profile picture */
+    height: 180px;
+    border-radius: 50%; /* Circular shape */
+    object-fit: cover; /* Ensures the entire image is visible */
+    margin-bottom: 20px;
+    border: 4px solid #fff; /* White border around profile picture */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+section {
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    font-size: 2em; /* Larger section titles */
+    color: #ecf0f1; /* Light color for headings */
+    border-bottom: 2px solid #7F8C8D; /* Underline effect */
+    padding-bottom: 10px; /* Spacing below the heading */
+}
+
+.project {
+    margin-bottom: 30px; /* Increased margin for projects */
+}
+
+.project h3 {
+    color: #ecf0f1; /* Light text for project titles */
+    font-size: 1.6em; /* Slightly larger project titles */
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #081018; /* Dark background for footer */
+    color: #ecf0f1; /* Light text color */
+    text-align: center;
+    padding: 15px 0; /* Increased padding */
+    position: relative; /* Allow for positioning child elements */
+}
+
+
